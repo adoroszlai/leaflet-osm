@@ -61,6 +61,13 @@ L.OSM.HOT = L.OSM.TileLayer.extend({
   }
 });
 
+L.OSM.HuHiking = L.OSM.TileLayer.extend({
+  options: {
+    url: 'http://www.openstreetmap.hu/tt/{z}/{x}/{y}.png',
+    attribution: "Hiking layer courtesy of <a href='http://www.openstreetmap.hu/' target='_blank'>OSM.hu</a>",
+  }
+});
+
 L.OSM.DataLayer = L.FeatureGroup.extend({
   options: {
     areaTags: ['area', 'building', 'leisure', 'tourism', 'ruins', 'historic', 'landuse', 'military', 'natural', 'sport'],
