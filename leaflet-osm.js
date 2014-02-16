@@ -26,6 +26,7 @@ L.OSM.Mapnik = L.OSM.TileLayer.extend({
 L.OSM.CycleMap = L.OSM.TileLayer.extend({
   options: {
     url: 'http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png',
+    maxZoom: 18,
     attribution: "Tiles courtesy of <a href='http://www.opencyclemap.org/' target='_blank'>Andy Allan</a>"
   }
 });
@@ -33,6 +34,7 @@ L.OSM.CycleMap = L.OSM.TileLayer.extend({
 L.OSM.TransportMap = L.OSM.TileLayer.extend({
   options: {
     url: 'http://{s}.tile2.opencyclemap.org/transport/{z}/{x}/{y}.png',
+    maxZoom: 18,
     attribution: "Tiles courtesy of <a href='http://www.opencyclemap.org/' target='_blank'>Andy Allan</a>"
   }
 });
@@ -43,6 +45,7 @@ L.OSM.MapQuestOpen = L.OSM.TileLayer.extend({
       'https://otile{s}-s.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png' :
       'http://otile{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png',
     subdomains: '1234',
+    maxZoom: 18,
     attribution: document.location.protocol === 'https:' ?
       "Tiles courtesy of <a href='http://www.mapquest.com/' target='_blank'>MapQuest</a> <img src='https://developer.mapquest.com/content/osm/mq_logo.png'>" :
       "Tiles courtesy of <a href='http://www.mapquest.com/' target='_blank'>MapQuest</a> <img src='http://developer.mapquest.com/content/osm/mq_logo.png'>"
