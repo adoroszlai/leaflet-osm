@@ -63,7 +63,7 @@ L.OSM.HOT = L.OSM.TileLayer.extend({
 
 L.OSM.HuHiking = L.OSM.TileLayer.extend({
   options: {
-    url: 'http://www.openstreetmap.hu/tt/{z}/{x}/{y}.png',
+    url: 'http://{s}.tile.openstreetmap.hu/tt/{z}/{x}/{y}.png',
     attribution: "Hiking layer courtesy of <a href='http://www.openstreetmap.hu/' target='_blank'>OSM.hu</a>",
   }
 });
